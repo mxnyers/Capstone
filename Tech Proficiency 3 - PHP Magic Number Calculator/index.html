@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Individual Tech Proficiency 3: Magic Number</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <h1>Individual Tech Proficiency 3: Magic Number</h1>
+
+
+        <!--Code adapted from: https://medium.freecodecamp.org/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98
+        and https://codeburst.io/making-a-calculator-with-basic-html-css-and-javascript-part-1-1e4288f0bea1 !-->
+        <div class="container">
+        <div class="calculator">
+            <!-- Form submitting learned from https://www.w3schools.com/tags/att_button_form.asp !-->
+            <form name="calculator" method="post"  action="http://cgi.sice.indiana.edu/~examples/info-i494/api/index.php/magic-number">
+
+
+                <div class="calculator__display"><input type="text" name="number"></div>
+
+                        <div class="calculator__keys">
+
+                        <input type="button" class="operator" name="plus" value="+" onclick="calculator.number.value += '+'">
+                        <input type="button" name="seven" value="7" onclick="calculator.number.value += '7'">
+                        <input type="button" name="eight" value="8" onclick="calculator.number.value += '8'">
+                        <input type="button" name="nine" value="9" onclick="calculator.number.value += '9'">
+
+                        <input type="button" class="operator" name="minus" value="-" onclick="calculator.number.value += '-'">
+                        <input type="button" name="four" value="4" onclick="calculator.number.value += '4'">
+                        <input type="button" name="five" value="5" onclick="calculator.number.value += '5'">
+                        <input type="button" name="six" value="6" onclick="calculator.number.value += '6'">
+
+                        <input type="button" class="operator" name="times" value="x" onclick="calculator.number.value += '*'">
+
+                        <input type="button" name="one" value="1" onclick="calculator.number.value += '1'">
+                        <input type="button" name="two" value="2" onclick="calculator.number.value += '2'">
+                        <input type="button" name="three" value="3" onclick="calculator.number.value += '3'">
+
+                        <input type="button" class="operator" name="div" value="/" onclick="calculator.number.value += '/'">
+                        <input type="button" name="zero" value="0" onclick="calculator.number.value += '0'">
+                        <input type="button" name="decimal" value="." onclick="calculator.number.value += '.'">
+                        <input type="button" id="clear" name="clear" value="AC" onclick="calculator.number.value = ''">
+                        <input type="button" name="doit" value="=" onclick="calculator.number.value = eval(calculator.number.value)">
+
+
+
+                    <!-- Form submitting learned from https://www.w3schools.com/tags/att_button_form.asp and old I308 work !-->
+                    <input type="submit" name="submit"  value="Obfuscate">
+                </div>
+            </div>
+                <input type="text" name="team" value="07">
+                </form>
+            <div class="message">
+                <p>{"status":true,"magic-number":32,"message":"The magic number is 32. Hopefully it is right! The number was calculated by Mr. Melvina Mertz in United States of America.","method":"POST"}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+</html>
